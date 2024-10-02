@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body{
+    background-color:#EFEEF3;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    //esta é uma forma de mudar o estilo para uma determinada tela
+    @media(max-width: 800px){ 
+    flex-direction: column;
+    }
+}
+ul{
+ display: flex; 
+ list-style: none;  //tirou as bolinhas no inicio de cada nome
+ width: 70vw;
+ justify-content: space-around;// separou as palavras que antes estavam juntas
+ @media(max-width: 800px){ 
+    flex-direction: column;
+    text-align: center;
+    }
+}
