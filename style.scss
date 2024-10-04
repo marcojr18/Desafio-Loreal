@@ -38,11 +38,25 @@ main{
         
     }
     section{
-     display: flex;
+     display: flex;//  torna o display flexivel
      align-items: center;
      justify-content: space-around;
+     margin-top: 30px; // colocou uma distancia no topo da imagem
+     @media(max-width: 800px){
+        flex-direction: column;//fez o testo ficar abaixo da imagem com a tela abaixo de 800 px (a tela esta flexivel)
+     }
+
     }
     .caixa1{
         width: 30vw;
+        line-height: 25px;// dei espaçamento na altura das linhas do texto
+        text-align: center;
+        @media (max-width:800px){
+            width: 55vw;
+            text-align: center;// centralizou o texto abaixo da imagem 
+            margin-top: 30px;//mesmo mprocesso do anterior deu espaço do topo do texto para a imagem
+        
+            
+        }
     }
 }
